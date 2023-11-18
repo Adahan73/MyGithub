@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int A, B, N;
+
+    cout << "som: ";
+    cin >> A;
+
+    cout << "tyiyn: ";
+    cin >> B;
+
+    cout << "pies: ";
+    cin >> N;
+
+    int totalSom = (A * N + B * N / 100); 
+    int totalTyiyn = (B * N) % 100;  
+
+    cout << " " << totalSom << " som and " << totalTyiyn << " tyiyn" << endl;
+
+    return 0;
+}

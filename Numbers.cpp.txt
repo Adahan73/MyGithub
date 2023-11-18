@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int N, number, even = 0, odd = 0;
+
+    cout << " ";
+    cin >> N;
+
+    for (int i = 0; i < N; ++i) {
+        cout << " " << (i + 1) << " ";
+        cin >> number;
+
+        if (number % 2 == 0) {
+            even++;
+        } else {
+            odd++;
+        }
+    }
+
+    cout << " " << N << " numbers:" << endl;
+    cout << "Evens: " << even << endl;
+    cout << "Odds: " << odd << endl;
+
+    return 0;
+}
